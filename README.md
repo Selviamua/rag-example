@@ -25,7 +25,11 @@ PDF → 文档分割 → 向量化 → Chroma 存储 → 检索 → LLM 生成
 - **LLM**：DeepSeek API
 - **框架**：LangChain
 
-## 📊 实验结果
+## � 系统界面
+
+<img src="images/ui_picture.png" alt="系统交互界面 - Streamlit UI" width="700"/>
+
+## �📊 实验结果
 
 ### 问题诊断
 
