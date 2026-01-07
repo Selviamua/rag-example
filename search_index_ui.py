@@ -13,10 +13,10 @@ from dotenv import load_dotenv
 # Load the environment variables from the .env file
 load_dotenv()
 
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.vectorstores import OpenSearchVectorSearch
-from langchain.vectorstores.pgvector import PGVector
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import OpenSearchVectorSearch
+from langchain_community.vectorstores.pgvector import PGVector
 
 from streamlit.logger import get_logger
 

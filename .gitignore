@@ -133,6 +133,15 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+rag-env/
+
+# Vector database
+doc_index/
+chroma.sqlite3
+
+# Experimental results (optional)
+*_results_*.json
+qa_results_*.json
 
 # Spyder project settings
 .spyderproject

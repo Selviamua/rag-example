@@ -1,0 +1,140 @@
+[
+    {
+      "id": 1,
+      "document": "Furthermore, using the same TMB4425 strain, a study revealed that nitrogen limitation influences PHB production. Unlike bacteria, S. cerevisiae exhibited higher PHB production under nitrogen-rich conditions, achieving a PHB titer of 730 mg/L under a nitrogen-rich and oxygen-limited condition (Portugal-Nunes et al., 2017).",
+      "question": "What is the PHB titer achieved by S. cerevisiae under nitrogen-rich and oxygen-limited conditions, according to the paper?",
+      "gold_answer": "730 mg/L"
+    },
+    {
+      "id": 2,
+      "document": "As ML algorithms continue to mature and biological databases grow, synthetic biological research will likely expand from DNA sequence-level predictions to three-dimensional protein modeling and the estimation of optimal culture conditions (Feehan et al., 2021).",
+      "question": "What is the future trend in synthetic biological research, according to the paper?",
+      "gold_answer": "Synthetic biological research will likely expand from DNA sequence-level predictions to three-dimensional protein modeling and the estimation of optimal culture conditions."
+    },
+    {
+      "id": 3,
+      "document": "To meet the growing demand for microbial production of these bioplastics, synthetic biology has emerged as a transformative approach for engineering microbial cell factories. Since its introduction by Eric Kool at the American Chemical Society annual meeting in 2000 (Rawls, 2000), synthetic biology has garnered significant investment from industry and widespread attention from academia (Garner, 2021). This interdisciplinary field integrates principles from biology, engineering, and computational science to design and construct biological systems with novel functions. In the context of bioplastic production, synthetic biology enables the precise engineering of microbial metabolism to optimize the synthesis of bioplastic monomers and polymers. Key synthetic biology techniques, such as CRISPR-Cas9 for genome editing, modular DNA assembly for pathway construction, adaptive laboratory evolution, and computational modeling for pathway and fermentation conditions optimization, have demonstrated their power in advancing microbial cell factory engineering.",
+      "question": "What are some key techniques in synthetic biology that have advanced microbial bioplastic production, according to the paper?",
+      "gold_answer": "Key synthetic biology techniques include CRISPR-Cas9 for genome editing, modular DNA assembly for pathway construction, adaptive laboratory evolution, and computational modeling for pathway and fermentation conditions optimization."
+    },
+    {
+      "id": 4,
+      "document": "As a result, notable achievements in microbial bioplastic production have been reported, including lactic acid production at 154 g/L in Pichia kudriavzevii (Park et al., 2018) and 142 g/L in Saccharomyces cerevisiae (Song et al., 2016), succinate at 105.8 g/L in Actinobacillus succinogenes (Guettler et al., 1996), muconic acid at 64.5 g/L in Escherichia coli (Choi et al., 2019), and PHB at 98.7 g/L in Alcaligenes latus (Wang & Lee, 1997).",
+      "question": "What is the highest PHB production achieved in Alcaligenes latus, as reported in the paper?",
+      "gold_answer": "98.7 g/L in Alcaligenes latus (Wang & Lee, 1997)."
+    },
+    {
+      "id": 5,
+      "document": "Among these, bacteria, particularly E. coli, are the most amenable to genetic modifications. However, bacterial systems typically have lower tolerances to harsh industrial conditions and are prone to phage contamination and unwanted horizontal gene transfer. This poses significant issues in industrial-scale production, especially if antibiotic-resistant genes spread (Carruthers & Lee, 2022; De Souza & Gupta, 2024).",
+      "question": "What are some of the challenges associated with using bacteria, particularly E. coli, for industrial-scale bioplastic production, according to the paper?",
+      "gold_answer": "Bacterial systems typically have lower tolerances to harsh industrial conditions and are prone to phage contamination and unwanted horizontal gene transfer. This poses significant issues in industrial-scale production, especially if antibiotic-resistant genes spread."
+    },
+    {
+      "id": 6,
+      "document": "Yeast-based systems, particularly S. cerevisiae and Yarrowia lipolytica, show promise due to their scalability, robustness, and well-established genetic engineering tools. As an already proven industrial production host, S. cerevisiae demonstrates superior tolerance to various stress conditions, and its membrane-bound organelles facilitate complex biosynthetic pathways. It holds the generally recognized as safe (GRAS) status and is easy to handle. As the first eukaryote to have its whole genome sequenced, S. cerevisiae has plentiful engineering tools for genetic modification, as well as a highly efficient homologous recombination system for precise genetic modifications (Hong & Nielsen, 2012; Lian et al., 2018).",
+      "question": "What are the advantages of using S. cerevisiae as a host for industrial bioplastic production?",
+      "gold_answer": "S. cerevisiae demonstrates superior tolerance to various stress conditions, its membrane-bound organelles facilitate complex biosynthetic pathways, and it holds the generally recognized as safe (GRAS) status. Additionally, it has plentiful engineering tools for genetic modification and a highly efficient homologous recombination system for precise genetic modifications."
+    },
+    {
+      "id": 7,
+      "document": "In addition to S. cerevisiae, Y. lipolytica, a non-conventional yeast, also exhibits unique properties for use as a host in bioplastic production. Its innate metabolic pathway for fatty acid metabolism benefits the production of certain bioplastic monomers. Furthermore, Y. lipolytica can grow under extreme conditions, such as low pH, high salt levels, and high cell density, while still producing significant quantities of valuable molecules (Larroude et al., 2018).",
+      "question": "What unique properties of Y. lipolytica make it an attractive option for bioplastic production?",
+      "gold_answer": "Y. lipolytica exhibits unique properties for bioplastic production, including its innate metabolic pathway for fatty acid metabolism, ability to grow under extreme conditions (such as low pH, high salt levels, and high cell density), and its capacity to produce significant quantities of valuable molecules."
+    },
+    {
+      "id": 8,
+      "document": "For example, engineered Corynebacterium glutamicum has been reported to produce up to 264 g/L of lactic acid using glucose as the carbon source (Tsuge et al., 2019).",
+      "question": "What is the highest lactic acid production titer reported for engineered Corynebacterium glutamicum using glucose as the carbon source?",
+      "gold_answer": "264 g/L of lactic acid using glucose as the carbon source."
+    },
+    {
+      "id": 9,
+      "document": "Additionally, recent advancements have enabled the production of polymeric PLA directly from E. coli, achieving a titer of 0.955 g/L (Jung et al., 2010; Shi et al., 2022).",
+      "question": "What is the titer of polymeric PLA produced directly from E. coli as reported in the paper?",
+      "gold_answer": "0.955 g/L of polymeric PLA."
+    },
+    {
+      "id": 10,
+      "document": "For instance, S. cerevisiae SP1130 strain achieved an LA titer of 142 g/L (Song et al., 2016) by expressing heterologous lactate dehydrogenase (LDH) genes, disrupting and attenuating competitive pathways, and introducing bacterial acetylating acetaldehyde dehydrogenase (A-ALD) genes to compensate for acetyl-CoA production.",
+      "question": "What is the role of A-ALD genes in the S. cerevisiae SP1130 strain for lactic acid production, as described in the paper?",
+      "gold_answer": "A-ALD genes were introduced to compensate for acetyl-CoA production."
+    },
+    {
+      "id": 11,
+      "document": "For instance, S. cerevisiae SP1130 strain achieved an LA titer of 142 g/L (Song et al., 2016) by expressing heterologous lactate dehydrogenase (LDH) genes, disrupting and attenuating competitive pathways, and introducing bacterial acetylating acetaldehyde dehydrogenase (A-ALD) genes to compensate for acetyl-CoA production.",
+      "question": "What is the LA titer achieved by S. cerevisiae SP1130 strain expressing A-ALD genes, as reported in the paper?",
+      "gold_answer": "142 g/L."
+    },
+    {
+      "id": 12,
+      "document": "In a notable study, six copies of the bovine L-LDH (L-lactate dehydrogenase) were introduced into the genome of S. cerevisiae, resulting in the L-lactate titer of 122 g/L and the optical purity above 99.9% (Saitoh et al., 2005).",
+      "question": "What was the L-lactate titer achieved by introducing six copies of bovine L-LDH into the genome of S. cerevisiae, as reported in the paper?",
+      "gold_answer": "122 g/L."
+    },
+    {
+      "id": 13,
+      "document": "In another study, Candida boidinii was engineered by disrupting the PDC1 encoding pyruvate decarboxylase, thereby reducing ethanol production. Under optimized batch fermentation, this strain achieved 85.9 g/L of L-LA production within 48 h, with a productivity of 1.79 g/L/h (Osawa et al., 2009).",
+      "question": "What was the L-LA titer achieved by engineering Candida boidinii, as reported in the paper?",
+      "gold_answer": "85.9 g/L of L-LA production within 48 hours, with a productivity of 1.79 g/L/h."
+    },
+    {
+      "id": 14,
+      "document": "A study in Pichia pastoris employed a combined strategy of LDH screening, employing NADPH-dependent LDH, blocking LA consumption pathways, and constructing a coordinated dual pathway in both cytoplasm and mitochondria. Through these strategies, the group achieved 4.2 g/L of L-LA from methanol as the sole carbon source, demonstrating the potential of methylotrophic yeasts for methanol-based biotransformation (Wu et al., 2025).",
+      "question": "What strategies were employed in the study on Pichia pastoris to achieve 4.2 g/L of L-LA from methanol, as reported in the paper?",
+      "gold_answer": "The strategies included LDH screening using NADPH-dependent LDH, blocking LA consumption pathways, and constructing a coordinated dual pathway in both cytoplasm and mitochondria."
+    },
+    {
+      "id": 15,
+      "document": "At the strain level, engineering efforts focus on enhancing the robustness of the host organism under industrial fermentation conditions while reducing the burden for the downstream processes. Although yeast generally tolerates harsher conditions better than bacteria, further improvements in tolerance are still necessary to achieve economic feasibility. To this end, adaptive laboratory evolution (ALE) and the introduction or modification of specific target genes are employed to improve strain tolerance toward acid stress, high salt, high sugar concentrations, and toxicity from by-products generated during a fermentation process.",
+      "question": "What are the strategies used to improve strain tolerance toward industrial fermentation conditions, as described in the paper?",
+      "gold_answer": "Adaptive laboratory evolution (ALE) and the introduction or modification of specific target genes to improve strain tolerance toward acid stress, high salt, high sugar concentrations, and toxicity from by-products generated during a fermentation process."
+    },
+    {
+      "id": 16,
+      "document": "ALE employed to improve lactic acid tolerance resulted in a 17% increase in L-LA production, reaching a titer of 119 g/L using buckwheat husk hydrolysates (Jang et al., 2021).",
+      "question": "What was the L-LA production titer achieved after ALE was employed to improve lactic acid tolerance, as reported in the paper?",
+      "gold_answer": "119 g/L of L-LA using buckwheat husk hydrolysates."
+    },
+    {
+      "id": 17,
+      "document": "In another example, combined efforts of ALE with the introduction of a heterologous LDH and deletion of ADH and GPD, the genes involved in ethanol and glycerol synthesis, respectively, as well as the genes involved in the D-LA degradation pathway (DLD1). These efforts resulted in the production of 82.6 g/L D-LA with a yield of 0.83 g/g glucose in S. cerevisiae JHY5730 (Baek et al., 2017).",
+      "question": "What was the result of combining ALE with the introduction of a heterologous LDH and deletion of ADH and GPD in S. cerevisiae?",
+      "gold_answer": "Production of 82.6 g/L D-LA with a yield of 0.83 g/g glucose."
+    },
+    {
+      "id": 18,
+      "document": "The global metabolic engineering strategy (GMES) using a cocktail δ-integration method has proven to be effective in LA production, during which random integration of 13 genes from Leuconostoc mesenteroides into genomic DNA of S. cerevisiae yielded a D-LA titer of 33.9 g/L of even without neutralizing agents (Mitsui et al., 2020).",
+      "question": "What D-LA titer was achieved by using the GMES strategy with random integration of 13 genes from Leuconostoc mesenteroides into S. cerevisiae?",
+      "gold_answer": "33.9 g/L of D-LA."
+    },
+    {
+      "id": 19,
+      "document": "Additionally, optimizing cellular redox balance has been applied as a strategy to enhance LA production. Beyond deleting genes in competitive pathways against LA production, Lee et al. (2015) deleted two genes, nde1 and nde2, involved in regulating redox balance to redistribute cytosolic NADH. This modification led to a 32.6% increase in the final L-LA titer, reaching 117 g/L in a fed-batch bioreactor, and underscoring the importance of redox balance engineering (Lee et al., 2015).",
+      "question": "How did optimizing the redox balance improve L-LA production, according to the paper?",
+      "gold_answer": "Deleting two genes, nde1 and nde2, involved in regulating redox balance led to a 32.6% increase in the final L-LA titer, reaching 117 g/L in a fed-batch bioreactor."
+    },
+    {
+      "id": 20,
+      "document": "The highest titer of AA produced by yeast (50 g/L) was disclosed in Verdezyne Inc. patent, achieved by Candida spp. with engineered fatty acid catabolism (Beardslee & Picataggio, 2012).",
+      "question": "How was the highest titer of 50 g/L AA produced by yeast, as disclosed in the Verdezyne Inc. patent, achieved according to the paper?",
+      "gold_answer": "By engineering fatty acid catabolism in Candida spp."
+    },
+    {
+      "id": 21,
+      "document": "Nicolai et al. introduced a heterologous MA synthesis pathway and deleted the genes involved in ethanol production along with eliminating feedback inhibition in the shikimate pathway. These efforts resulted in the production of 4.5 g/L ccMA by S. cerevisiae (Nicolai et al., 2021).",
+      "question": "What strategy did Nicolai et al. apply to improve ccMA production in S. cerevisiae, as reported in the paper?",
+      "gold_answer": "Nicolai et al. introduced a heterologous MA synthesis pathway, deleted the genes involved in ethanol production, and eliminated feedback inhibition in the shikimate pathway."
+    },
+    {
+      "id": 22,
+      "document": "Later, a similar carbon-flux redirection strategy was employed by overexpression and mutation of several genes (PYK1, PYC1, PCK1, ScARO4K229L, EcaroB, EcaroD) in S. cerevisiae, achieving 22.5 g/L of ccMA production (Wang et al., 2022).",
+      "question": "What strategy did Wang et al. employ to achieve 22.5 g/L of ccMA production in S. cerevisiae, according to the paper?",
+      "gold_answer": "Wang et al. employed a carbon-flux redirection strategy through overexpression and mutation of several genes (PYK1, PYC1, PCK1, ScARO4K229L, EcaroB, EcaroD) in S. cerevisiae."
+    },
+    {
+      "id": 23,
+      "document": "Low product titers in AA and ccMA production are largely attributed to yeast’s sensitivity to the pathway intermediate, catechol, which inhibits growth at 0.5 mM compared to 5 mM in Pseudomonas. Additionally, protocatechuic acid decarboxylase (AroY) exhibits 90% lower activity in yeast than in bacteria due to improper flavin cofactor incorporation at 30°C (Marshall et al., 2017).",
+      "question": "What is the reason for the low product titers in AA and ccMA production, according to the paper?",
+      "gold_answer": "Low product titers in AA and ccMA production are largely attributed to yeast's sensitivity to the pathway intermediate, catechol, which inhibits growth at 0.5 mM compared to 5 mM in Pseudomonas. Additionally, protocatechuic acid decarboxylase (AroY) exhibits 90% lower activity in yeast than in bacteria due to improper flavin cofactor incorporation at 30°C."
+    }
+  ]

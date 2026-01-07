@@ -27,14 +27,14 @@ from dotenv import load_dotenv
 # Load the environment variables from the .env file
 load_dotenv()
 
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.chat_models import AzureChatOpenAI, BedrockChat
-from langchain.vectorstores import Chroma
-from langchain.vectorstores import OpenSearchVectorSearch
-from langchain.vectorstores.pgvector import PGVector
-from langchain.chains import ConversationalRetrievalChain
-from langchain.memory import ConversationBufferWindowMemory
-
+from langchain_openai import ChatOpenAI
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.chat_models import AzureChatOpenAI, BedrockChat
+from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import OpenSearchVectorSearch
+from langchain_community.vectorstores.pgvector import PGVector
+from langchain_classic.chains import ConversationalRetrievalChain
+from langchain_classic.memory import ConversationBufferWindowMemory
 from streamlit.logger import get_logger
 
 logger = get_logger(__name__)
@@ -65,11 +65,26 @@ def load_embeddings():
 @st.cache_resource
 def load_llm():
     # Check which environment variables are set and use the appropriate LLM
+    # DeepSeek 配置（从 .env 读取）
+    deepseek_api_key = os.getenv("DEEPSEEK_API_KEY")
+    deepseek_model = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+    deepseek_base_url = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
+    
     openai_model_name = os.getenv("OPENAI_MODEL_NAME")
     aws_credential_profile_name = os.getenv("AWS_CREDENTIAL_PROFILE_NAME")
     aws_bedrock_model_name = os.getenv("AWS_BEDROCK_MODEL_NAME")
+    
     llm = None
-    if openai_model_name:
+    if deepseek_api_key:
+        print("Using DeepSeek for language model.")
+        llm = ChatOpenAI(
+            model=deepseek_model,
+            api_key=deepseek_api_key,
+            base_url=deepseek_base_url,
+            temperature=0.5,
+            verbose=VERBOSE,
+        )
+    elif openai_model_name:
         print("Using Azure for language model.")
         llm = AzureChatOpenAI(
             temperature=0.5, deployment_name=openai_model_name, verbose=VERBOSE
@@ -203,7 +218,7 @@ if prompt := st.chat_input(PLACE_HOLDER):
     write_message(msg)
 
     qa = st.session_state["query_chain"]
-    query_response = qa({"question": prompt})
+    query_response = qa.invoke({"question": prompt})
     response = query_response["answer"]
     source_docs = [d.metadata for d in query_response["source_documents"]]
     msg = save_message(ANSWER_ROLE, response, source_docs)

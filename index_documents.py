@@ -12,17 +12,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from transformers import AutoTokenizer
-from langchain.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.vectorstores import OpenSearchVectorSearch
-from langchain.vectorstores.pgvector import PGVector
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import OpenSearchVectorSearch
+from langchain_community.vectorstores.pgvector import PGVector
 
-SOURCE_DOCUMENTS = ["source_documents/5008_Federalist Papers.pdf"]
+
+SOURCE_DOCUMENTS = ["source_documents/Le.pdf"]
 COLLECTION_NAME = "doc_index"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-
 
 def main():
     print("Ingesting...")
